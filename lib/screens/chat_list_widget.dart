@@ -32,20 +32,20 @@ List<ChatItem> chatItems = [
         'https://www.danielhernandez.website/wp-content/uploads/2017/07/facebook-icon-gran.png',
     name: 'Carlos',
     message: 'hola como estas',
-    date: DateTime.parse('2010-05-06'),
+    date: DateTime.parse('2010-05-06 01:45:44.000'),
   ),
   ChatItem(
     avatarURL:
         'https://www.danielhernandez.website/wp-content/uploads/2017/07/facebook-icon-gran.png',
     name: 'Carlos',
     message: 'hola como estas',
-    date: DateTime.parse('2010-05-06'),
+    date: DateTime.parse('2010-05-06 01:45:44.000'),
   ),
   ChatItem(
     avatarURL:
         'https://www.danielhernandez.website/wp-content/uploads/2017/07/facebook-icon-gran.png',
     name: 'Carlos',
     message: 'hola como estas',
-    date: DateTime.parse('2010-05-06'),
+    date: DateTime.parse('2010-05-06 01:45:44.000'),
   ),
 ];

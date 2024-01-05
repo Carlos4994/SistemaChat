@@ -11,4 +11,8 @@ class ChatItem {
     required this.message,
     required this.date,
   });
+
+  String get lastMessageTime => "${date.hour}:${date.minute}";
+
+  String get shortMessage => "${message}";
 }

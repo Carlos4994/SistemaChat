@@ -14,8 +14,20 @@ class ChatItemWidget extends StatelessWidget {
       leading: CircleAvatar(
         backgroundImage: NetworkImage(chatItem.avatarURL),
       ),
-      title: Text(chatItem.name),
-      subtitle: Text(chatItem.message),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Text(
+            chatItem.name,
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
+          Text(
+            chatItem.lastMessageTime,
+            style: TextStyle(fontSize: 10.0),
+          ),
+        ],
+      ),
+      subtitle: Text(chatItem.shortMessage),
     );
   }
 }
