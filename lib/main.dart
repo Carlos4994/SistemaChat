@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.green,
           appBarTheme: AppBarTheme(
-            backgroundColor: Colors.purpleAccent[200],
+            backgroundColor: Colors.green,
           )),
       home: Whatsapp(),
     );
