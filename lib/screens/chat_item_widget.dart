@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:clon_whastapp/models/chatItem.dart';
+import 'package:clon_whastapp/screens/widgets/check_widget.dart';
 import 'package:flutter/material.dart';
 
 class ChatItemWidget extends StatelessWidget {
@@ -28,8 +29,14 @@ class ChatItemWidget extends StatelessWidget {
           ],
         ),
         subtitle: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            Text(chatItem.shortMessage),
+            Row(
+              children: <Widget>[
+                CheckWidget(chatItem.cheked),
+                Text(chatItem.shortMessage),
+              ],
+            ),
             chatItem.haveUnreadMessage
                 ? Container(
                     padding: EdgeInsets.all(8.0),
